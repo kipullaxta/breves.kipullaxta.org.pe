@@ -1,0 +1,494 @@
+/* breves.kipullaxta.org.pe, a simple static site for brief articles for Kipu Llaxta
+Copyright (C) 2023 Daniel Muñoz Raya
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. */
+
+/* Básico de toda la página */
+
+html {
+  background: white;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+
+  color: black;
+  background: white;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  align-content: start;
+}
+
+/* body > * {
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
+} */
+
+/* Cabecera */
+
+header>div {
+  padding-top: 2vmax;
+  padding-left: 2vmax;
+  padding-right: 2vmax;
+}
+
+header h1 img {
+  max-width: 66vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enlace-ir-al-contenido {
+  background: white;
+  top: 2vmax;
+  right: 2vmax;
+  padding: 2vmax;
+  margin: 0;
+  position: absolute;
+  transform: translateY(-40vh);
+  transition: transform 0.3s;
+}
+
+.enlace-ir-al-contenido:focus {
+  transform: translateY(0%);
+}
+
+/* Pie */
+
+footer>div {
+  padding-left: 2vmax;
+  padding-right: 2vmax;
+  margin-bottom: 1vmax;
+}
+
+footer {
+  margin-top: 2vmax;
+  padding-top: 1vmax;
+  background-color: #5D5C5C10;
+}
+
+#f_redesSociales {
+  text-align: center;
+}
+
+#f_redesSociales>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#f_redesSociales li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#f_redesSociales a {
+  display: block;
+  padding: 8px;
+}
+
+#f_2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.5em; */
+}
+
+#f_2>div {
+  margin-right: 0.5em;
+}
+
+#f_contadorDeVisitas {
+  /* display: none; */
+  margin-top: 21px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Principal */
+
+main {
+  padding-left: 2vmax;
+  padding-right: 2vmax;
+}
+
+/* Artículos */
+
+article {
+  margin: 0vmax;
+  margin-top: 2vmax;
+  padding: 2vmax;
+  background-color: #FCC23120;
+  border-radius: 0.5vmin;
+  border: 2px solid #FCC23140;
+  transition: border-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+article>* {
+  margin: 0;
+  padding: 0;
+}
+
+main>article+article {
+  margin-top: 2vmax;
+}
+
+article:hover,
+article:focus-within {
+  background-color: #FCC23140;
+}
+
+article>ul>li {
+  list-style-type: none;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+article>span {
+  display: block;
+}
+
+article span a {
+  font-weight: normal !important;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+article.activo {
+  margin-top: 2vmax;
+  border: none;
+  border-left: 5vmin solid #27A15C;
+  /* Verde KLL */
+}
+
+article.activo:hover {
+  background-color: #FCC23120;
+  border: none;
+  border-left: 5vmin solid #27A15C;
+  /* Verde KLL */
+}
+
+article.activo h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+article.activo p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Elementos comunes y pequeños */
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 1vmin;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+  padding: 0;
+  margin-top: 4vmax;
+  margin-bottom: 2vmax;
+}
+
+h4 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+a,
+a:link {
+  transition: color 0.1s ease-in-out;
+  color: #304691;
+  /* Azul KLL */
+  font-weight: bold;
+  padding-left: 10vm;
+  padding-right: 10vm;
+}
+
+a:visited {
+  color: #27A15C;
+  /* Verde KLL */
+}
+
+a:hover,
+a:focus {
+  color: #E21968;
+  /* Rosa KLL */
+  border: #000 1vmax solid black;
+}
+
+a:active {
+  color: black;
+}
+
+abbr {
+  text-decoration-style: dotted;
+  text-decoration-color: #00000060;
+  text-decoration-line: underline;
+}
+
+.puntoOculto {
+  opacity: 0;
+}
+
+div.enlaces {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+div.enlaces>a.enlace {
+  margin-right: 2vmax;
+}
+
+a.enlace {
+  display: inline-block;
+  padding: 16px;
+  background-color: #27A15C;
+  /* Verde KLL */
+  border: 4px outset #ffffff80;
+  border-radius: 0.5vmin;
+  color: white !important;
+  text-decoration: none;
+}
+
+a.enlace:visited,
+a.enlace:link {
+  color: white !important;
+}
+
+a.enlace:hover {
+  cursor: pointer;
+}
+
+a.enlace:focus {
+  border: 4px solid #E21968;
+  background-color: #E2196880;
+  border-radius: 0;
+}
+
+a.enlace:active {
+  border-style: inset;
+  background-color: #27A15C80;
+  /* Verde KLL */
+}
+
+
+/* Ajustes para pantallas pequeñas */
+
+@media only screen and (max-width: 567px) {
+  header>div {
+    padding-top: 1vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+  }
+
+  .enlace-ir-al-contenido {
+    top: 1vmax;
+    right: 1vmax;
+    padding: 1vmax;
+  }
+
+  footer {
+    margin-top: 4vmax;
+  }
+
+  footer>div {
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+  }
+
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main>h3 {
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+  }
+
+  main>div>article+article {
+    margin-top: 4vmax;
+  }
+
+  article.activo {
+    margin-top: 4vmax;
+  }
+
+  article {
+    margin: 0vmax;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  div.descargas>a.descargar {
+    margin-right: 1vmin;
+  }
+}
+
+/* Modo oscuro */
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body {
+    background: black;
+    color: #e0e0e0;
+  }
+
+  .enlace-ir-al-contenido {
+    background: black;
+  }
+
+  article {
+    background: #30469140;
+    border-color: #30469140;
+  }
+
+  article:hover,
+  article:focus-within {
+    background: #30469120;
+    border-color: #30469120;
+  }
+
+  article.activo {
+    background: #30469120;
+  }
+
+  article.activo:hover {
+    background: #30469120;
+    border: none;
+    border-left: 5vmin solid #27A15C;
+    /* Verde KLL */
+  }
+
+  footer {
+    background-color: #5D5C5C40;
+  }
+
+  a,
+  a:link {
+    color: #FCC231;
+    /* Amarillo KLL */
+  }
+
+  a:hover,
+  a:focus {
+    color: #e4342a;
+    /* Rojo KLL */
+    border: #000 1vmax solid white;
+  }
+
+  a:active {
+    color: white;
+  }
+
+  figcaption {
+    color: white;
+  }
+}
+
+figure {
+  /* Center the figure element */
+  margin: 0 auto 1rem;
+  /* Add some space around the figure element */
+  padding: 1rem;
+
+  color: black;
+  background-color: #5d5c5c20;
+  /* Gris KLL con transparencia*/
+  border: 4px solid #5d5c5cA0;
+  /* Gris KLL con transparencia*/
+  border-radius: 0.5vmin;
+}
+
+figcaption {
+  /* Center the caption text */
+  text-align: left;
+  /* Use a smaller font size for the caption text */
+  font-size: 0.9rem;
+}
+
+figure>img {
+  max-width: 4rem;
+  height: auto;
+  display: inline-block;
+  /* Float the figure element to the right */
+  float: right;
+  /* Add some space between the figure element and the surrounding text */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Use a media query to define the styles for larger screens */
+@media (min-width: 1024px) {
+  figure {
+    /* Float the figure element to the right */
+    float: right;
+    /* Reduce the width of the figure element to 40% of the parent element */
+    width: 40%;
+    /* Add some space between the figure element and the surrounding text */
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 266px) {
+  figure{
+    text-align: center;
+  }
+  figure>img {
+    max-width: 4rem;
+    height: auto;
+    display: inline-block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Debug */
+
+/* html * {
+  background: rgba(255, 0, 0, .1);
+  box-shadow: 0 0 0 1px red;
+} */

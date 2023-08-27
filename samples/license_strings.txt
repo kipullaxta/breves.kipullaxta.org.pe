@@ -1,0 +1,25 @@
+breves.kipullaxta.org.pe, a simple static site for brief articles for Kipu Llaxta
+Copyright (C) 2023 Daniel Muñoz Raya
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+<!-- CODE STARTS HERE -->
+<!-- This code is licensed under the GPL-3.0-or-later License. See the COPYING file for more details. -->
+<html> <head> <title>My Website</title> <style> /* Your CSS code here */ </style> </head> <body>
+<!-- CODE ENDS HERE -->
+
+<!-- CONTENT STARTS HERE -->
+<!-- This content is licensed under the CC BY-NC-SA 4.0 License. See the CONTENT_LICENSE.md file for more details. -->
+<h1>My Website</h1> <p>This is my website where I share my thoughts and opinions.</p>
+<!-- CONTENT ENDS HERE -->
+
+<!-- CODE STARTS HERE -->
+<!-- This code is licensed under the GPL-3.0-or-later License. See the COPYING file for more details. -->
+<script> // Your JavaScript code here </script> </body> </html>
+<!-- CODE ENDS HERE -->

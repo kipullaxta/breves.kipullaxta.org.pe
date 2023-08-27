@@ -1,26 +1,21 @@
-breves.kipullaxta.org.pe, a simple static site for brief articles for Kipu Llaxta
-Copyright (C) 2023 Daniel Muñoz Raya
+# breves.kipullaxta.org.pe: A simple static site for brief articles for Kipu Llaxta
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-# breves.kipullaxta.org.pe
-
-Files for [breves.kipullaxta.org.pe](https://breves.kipullaxta.org.pe) website, by [Daniel Muñoz Raya](https://www.linkedin.com/in/daniel-munoz-raya/) for [Kipu Llaxta](https://kipullaxta.org.pe).
+Files for [breves.kipullaxta.org.pe](https://breves.kipullaxta.org.pe) website, by [Daniel Muñoz Raya](https://www.linkedin.com/in/daniel-munoz-raya/) for [Asociación Psico-Inclusiva Kipu Llaxta](https://kipullaxta.org.pe).
 
 ## License
 
-This website uses two licenses:
+This website is dual-licensed under the following terms:
 
-- [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) for website content.
-- [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html) for website code.
+- The code is licensed under the [GPL-3.0-or-later license](https://spdx.org/licenses/GPL-3.0-or-later.html).
+- The content is licensed under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).
 
-## About his project
+See the [COPYING] and [CONTENT_LICENSE.md] files for more details.
 
-It is just a small simple static website with brief articles focused on accessibility.
+Kipu Llaxta™ and the Kipu Llaxta logo are trademarks of [Asociación Psico-Inclusiva Kipu Llaxta](https://kipullaxta.org.pe). All rights reserved.
+
+## About this project
+
+It is just a small simple static website with brief articles focused on accessibility for [Asociación Psico-Inclusiva Kipu Llaxta](https://kipullaxta.org.pe).
 
 ## Accessibility
 
@@ -40,9 +35,9 @@ We are always looking for ways to improve the accessibility of our website. If y
 
 ## How to build and deploy
 
-This website is built using plain HTML files and hosted on GitHub Pages. To build and deploy the website, you need to have [Git] installed on your computer. You can then follow these steps:
+This website is built using plain HTML files and hosted on [GitHub Pages](https://pages.github.com/). To build and deploy the website, you need to have [Git] installed on your computer. You can then follow these steps:
 
 - Clone this repository using the command `git clone https://github.com/kipullaxta/breves.kipullaxta.org.pe.git`
 - Make any changes you want to the HTML files in the `docs` folder.
 - Commit and push your changes using the commands `git add .`, `git commit -m "your message"`, and `git push origin main`.
-- The website will be automatically updated on GitHub Pages.
+- The website will be automatically updated on [GitHub Pages](https://pages.github.com/).
