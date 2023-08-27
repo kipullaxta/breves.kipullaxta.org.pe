@@ -9,7 +9,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 # breves.kipullaxta.org.pe
 
-Files for [breves.kipullaxta.org.pe](https://breves.kipullaxta.org.pe) website.
+Files for [breves.kipullaxta.org.pe](https://breves.kipullaxta.org.pe) website, by [Daniel Muñoz Raya](https://www.linkedin.com/in/daniel-munoz-raya/) for [Kipu Llaxta](https://kipullaxta.org.pe).
 
 ## License
 
@@ -43,6 +43,6 @@ We are always looking for ways to improve the accessibility of our website. If y
 This website is built using plain HTML files and hosted on GitHub Pages. To build and deploy the website, you need to have [Git] installed on your computer. You can then follow these steps:
 
 - Clone this repository using the command `git clone https://github.com/kipullaxta/breves.kipullaxta.org.pe.git`
-- Make any changes you want to the HTML files in the `docs` folder
-- Commit and push your changes using the commands `git add .`, `git commit -m "your message"`, and `git push origin main`
-- The website will be automatically updated on GitHub Pages
+- Make any changes you want to the HTML files in the `docs` folder.
+- Commit and push your changes using the commands `git add .`, `git commit -m "your message"`, and `git push origin main`.
+- The website will be automatically updated on GitHub Pages.
