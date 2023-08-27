@@ -458,7 +458,6 @@ figcaption {
 figure>img {
   max-width: 4rem;
   height: auto;
-  display: inline-block;
   /* Float the figure element to the right */
   float: right;
   /* Add some space between the figure element and the surrounding text */
