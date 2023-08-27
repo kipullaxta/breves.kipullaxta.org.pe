@@ -10,7 +10,7 @@ You should have received a copy of the GNU General Public License along with thi
 /* Básico de toda la página */
 
 html {
-  background: white;
+  background: #fcc231;
 }
 
 body {
@@ -76,6 +76,15 @@ footer {
   margin-top: 2vmax;
   padding-top: 1vmax;
   background-color: #5D5C5C10;
+}
+
+footer hr {
+  padding:0;
+  margin:0;
+  margin-right: 6rem;
+  margin-left: 6rem;
+  margin-bottom:2rem;
+  border: 1px solid #5d5c5c30;
 }
 
 #f_redesSociales {
