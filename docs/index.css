@@ -306,6 +306,13 @@ a.enlace:active {
   /* Verde KLL */
 }
 
+hr {
+  margin: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1.5px solid #5d5c5cB0
+}
+
 
 /* Ajustes para pantallas pequeñas */
 
