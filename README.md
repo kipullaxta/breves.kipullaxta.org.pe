@@ -15,8 +15,8 @@ Files for [breves.kipullaxta.org.pe](https://breves.kipullaxta.org.pe) website.
 
 This website uses two licenses:
 
-- [CC BY-NC-SA 4.0]([Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)) for website content.
-- [GPL-3.0-or-later]([GNU General Public License v3.0 or later | Software Package Data Exchange (SPDX)](https://spdx.org/licenses/GPL-3.0-or-later.html)) for website code.
+- [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) for website content.
+- [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html) for website code.
 
 ## About his project
 
