@@ -259,7 +259,7 @@ a:link {
   transition: color 0.1s ease-in-out;
   color: #304691;
   /* Azul KLL */
-  font-weight: bold;
+  font-weight: 550;
   padding-left: 10vm;
   padding-right: 10vm;
 }
