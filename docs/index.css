@@ -169,7 +169,8 @@ article:focus-within {
 }
 
 article>ul>li {
-  list-style-type: none;
+  /* list-style-type: none; */
+  margin-left: 1.2em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
@@ -200,37 +201,57 @@ article.activo:hover {
   /* Verde KLL */
 }
 
-article.activo h4 {
+/* article.activo h4 {
   margin-top: 0.5em;
   margin-bottom: 0;
-}
+} */
 
-article.activo p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+article p {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
 }
 
 /* Elementos comunes y pequeños */
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 h2 {
-  margin-top: 1vmin;
-  font-size: 2em;
+  margin-top: 1rem;
+  font-size: 3em;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 2em;
   padding: 0;
-  margin-top: 4vmax;
-  margin-bottom: 2vmax;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 h4 {
-  font-size: 1.1em;
-  margin-bottom: 1em;
+  font-size: 1.6em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+h5 {
+  font-size: 1.3em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+h6 {
+  font-size: 1.15em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+h7 {
+  font-size: 1.05em;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 a,
@@ -322,6 +343,24 @@ hr {
   border: 1.5px solid #5d5c5cB0
 }
 
+/* Agradecimientos */
+
+section.agradecimientos::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #5d5c5cB0;
+  margin: 2rem 5rem 2rem 5rem;
+}
+
+section.agradecimientos h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+section.agradecimientos p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* Ajustes para pantallas pequeñas */
 

@@ -39,10 +39,10 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
+/* ul[class],
 ol[class] {
   list-style: none;
-}
+} */
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
