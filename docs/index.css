@@ -181,6 +181,12 @@ article>ul>li {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
+article>ol>li {
+  /* list-style-type: none; */
+  margin-left: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
 
 article>span {
   display: block;
@@ -498,12 +504,47 @@ section.metadatos li {
   }
 }
 
-figure {
-  /* Center the figure element */
-  margin: 0 auto 1rem;
-  /* Add some space around the figure element */
-  padding: 1rem;
+article figure.figura_grande {
+  padding:1em;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
 
+article figure.figura_grande img {
+  max-width: 100%;
+  max-height: 400px;
+  margin: auto;
+  box-shadow: 0 0 30px #00000030;
+}
+
+article figure.figura_grande figcaption {
+  font-style: italic;
+  font-size: large;
+  text-align: center;
+  padding-top: 0.5em;
+  color: #000000C0;
+}
+
+@media (min-width: 567px) {
+  article figure.figura_grande img {
+    border-radius: 0.5vmin;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  article figure.figura_grande figcaption {
+    color: #FFFFFFC0;
+  }
+  article figure.figura_grande img {
+    /*border: 1px solid #ffffff80;*/
+    box-shadow: 0 0 30px #FCC23180;
+  }
+}
+
+article figure.nota {
+  margin: 0 auto 1rem;
+  padding: 1rem;
   color: black;
   background-color: #5d5c5c20;
   /* Gris KLL con transparencia*/
@@ -512,26 +553,27 @@ figure {
   border-radius: 0.5vmin;
 }
 
-figcaption {
+article figure.nota figcaption {
   /* Center the caption text */
   text-align: left;
   /* Use a smaller font size for the caption text */
   font-size: 0.9rem;
 }
 
-figure>img {
+article figure.nota>img {
   max-width: 4rem;
   height: auto;
   /* Float the figure element to the right */
   float: right;
   /* Add some space between the figure element and the surrounding text */
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 0rem;
 }
 
 /* Use a media query to define the styles for larger screens */
 @media (min-width: 1024px) {
-  figure {
+  figure.nota {
     /* Float the figure element to the right */
     float: right;
     /* Reduce the width of the figure element to 40% of the parent element */
@@ -543,10 +585,10 @@ figure>img {
 }
 
 @media (max-width: 266px) {
-  figure{
+  figure.nota{
     text-align: center;
   }
-  figure>img {
+  figure.nota>img {
     max-width: 4rem;
     height: auto;
     display: inline-block;
